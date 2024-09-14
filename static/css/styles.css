@@ -1,0 +1,164 @@
+
+#editor-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+.left-side, .right-side {
+    display: flex;
+    align-items: center;
+}
+
+.left-side {
+    gap: 5px;
+}
+
+.right-side {
+    gap: 5px;
+}
+
+#search-bar, #filename {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#toolbar {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#toolbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#toolbar i {
+    font-size: 20px;
+    color: #333;
+}
+
+#toolbar select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.color-picker {
+    position: relative;
+}
+
+.color-picker select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.color-picker button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#editor {
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+#search-results {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+#search-results div {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+#search-results div:hover {
+    background-color: #f0f0f0;
+}
+
+#search-button {
+    width: 35px;
+    height: 35px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+#search-button i {
+    font-size: 24px;
+}
+
+#search-button:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#save-button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#save-button:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: #333;
+    overflow: hidden;
+}
